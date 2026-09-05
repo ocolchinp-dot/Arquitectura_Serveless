@@ -1,0 +1,9 @@
+node_modules/
+dist/
+local.settings.json
+.env
+*.log
+*.zip
+evidencias/*.png
+evidencias/*.jpg
+evidencias/*.jpeg

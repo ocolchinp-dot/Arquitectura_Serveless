@@ -1,0 +1,9 @@
+.git*
+.vscode
+node_modules
+dist
+evidencias
+*.zip
+local.settings.json
+README.md
+ENTREGA.md

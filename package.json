@@ -1,0 +1,28 @@
+{
+  "name": "azure-serverless-image-resizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Redimensionamiento de imágenes mediante Azure Blob Storage, Event Grid y Azure Functions.",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "npm run build"
+  },
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.9.0",
+    "@azure/identity": "^4.12.0",
+    "@azure/storage-blob": "^12.28.0",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}
